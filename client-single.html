@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <script src="https://kit.fontawesome.com/e95fdf927c.js" crossorigin="anonymous"></script>
+
+
+    <title>Page enseigne</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="/Users/admin/Desktop/get-fit/client-listing.html">Admin Get Fit</a>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropDown">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active"
+                                    href="/Users/admin/Desktop/get-fit/client-listing.html">Liste
+                                    partenaires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Users/admin/Desktop/get-fit/page-formulaire.html">Ajouter un partenaire</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#Modal">
+                        Mon compte
+                      </button>
+                      <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="ModalLabel">Bonjour, Admin Get Fit</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              Cliquez pour vous deconnecter.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                              <button type="button" class="btn btn-danger">Deconnexion</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </nav>
+            </div>
+        </div>
+
+        <section>
+
+            <section class="pt-3">
+                <a class="btn btn-secondary" href="/Users/admin/Desktop/get-fit/client-listing.html"
+                    role="button">
+                    Retour liste partenaires
+                </a>
+            </section>
+
+
+            <section>
+                <div class="row">
+                        <div class="container client-header-single pt-5">
+                        <div class="row col-md-12 col-xs-6 space-between">
+                            <div class="client-name col-md-4 col-xs-2 badge badge-secondary">
+                                <p class="mt-10 pr-5 pl-5 fs-16">Get Fit Bordeaux</p>
+                        </div>
+
+                        <div class="client-id col-md-4 col-xs-2 badge badge-secondary">
+                                <p class="mt-10 pr-5 pl-5 fs-16">client_id</p>
+                        </div>
+                        </div>
+                        <div class="row col-md-12 col-xs-6 space-between pt-2">
+
+                            <img src="/Users/admin/Desktop/get-fit/assets/get-fit-bordeaux.png" alt="" style="width:360px">
+
+
+                            <div class="client-id col-md-4 col-xs-2 badge badge-secondary">
+                                <p class="mt-10 pr-5 pl-5 fs-16" style>client_website</p>
+                                <p class="mt-10 pr-5 pl-5 fs-16" style>client_dpo</p>
+                                <p class="mt-10 pr-5 pl-5 fs-16" style>client_technical_contact</p>
+                                <p class="mt-10 pr-5 pl-5 fs-16" style>client_commercial_contact</p>
+                            </div>
+                        </div>
+                        <div class="row col-md-12 col-xs-6 pt-2">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1" id="client-toggle-activation">
+                                    <p> Non actif </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container client-locations border-top pt-5">
+                    <h1 class="pb-2">Gestion des enseignes</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-4 p-2">
+                            
+                            <img src="/Users/admin/Desktop/get-fit/assets/get-fit-bordeaux.png" class="card-img-top rounded-lg"
+                                alt="">
+                            <div class="custom-control custom-switch pt-2">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Actif</label>
+                            </div>
+                            <h5 class="fw-700 pt-3">Gestion des droits</h5>
+                        </div>
+
+                        <div class="col-md-6 col-xs-4">
+                            <div class="card-body">
+                                <h5 class="branch-id fw-700">Get Fit Bordeaux Lac</h5>
+                                <p class="branch-address">branch_address</p>
+                                <p class="branch-description">branch_description</p>
+                                <a class="btn btn-secondary" href="#" role="button">Voir le site de l'enseigne</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-xs-2 p-2">
+
+                            <div class="custom-control custom-switch pt-2">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Promotion de la salle</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input"  id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Vente boissons</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2"> Gestion planning équipe</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-2 p-2">
+
+                            <div class="custom-control custom-switch pt-2">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Outil e-mailing</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input"  id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Gestion paie</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Gestion congès</label>
+                            </div>
+                        </div>
+
+             
+                    </div>
+                </div>
+                <div class="container client-locations border-top pt-5">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-4 p-2">
+                            <img src="/Users/admin/Desktop/get-fit/assets/get-fit-bordeaux.png"class="card-img-top rounded-lg"
+                                alt="">
+                            <div class="custom-control custom-switch pt-2">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Actif</label>
+                            </div>
+                            <h5 class="fw-700 pt-3">Gestion des droits</h5>
+                        </div>
+
+                        <div class="col-md-6 col-xs-4">
+                            <div class="card-body">
+                                <h5 class="branch-id fw-700">Get Fit Bordeaux Cenon</h5>
+                                <p class="branch-address">branch_address</p>
+                                <p class="branch-description">branch_description</p>
+                                <a class="btn btn-secondary" href="#" role="button">Voir le site de l'enseigne</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-xs-2 p-2">
+
+                            <div class="custom-control custom-switch pt-2">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Promotion de la salle</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input"  id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Vente boissons</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2"> Gestion planning équipe</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-2 p-2">
+
+                            <div class="custom-control custom-switch pt-2">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Outil e-mailing</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input"  id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Gestion paie</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Gestion congès</label>
+                            </div>
+                        </div>
+
+             
+                    </div>
+                    
+                </div>
+                <div class="container client-locations border-top pt-5">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-4 p-2">
+                            <img src="/Users/admin/Desktop/get-fit/assets/get-fit-bordeaux-cenon.png" class="card-img-top rounded-lg"
+                                alt="">
+                            <div class="custom-control custom-switch pt-2">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Actif</label>
+                            </div>
+                            <h5 class="fw-700 pt-3">Gestion des droits</h5>
+                        </div>
+
+                        <div class="col-md-6 col-xs-4">
+                            <div class="card-body">
+                                <h5 class="branch-id fw-700">Get Fit Bordeaux Cours de l'Intendance</h5>
+                                <p class="branch-address">branch_address</p>
+                                <p class="branch-description">branch_description</p>
+                                <a class="btn btn-secondary" href="#" role="button">Voir le site de l'enseigne</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-xs-2 p-2">
+
+                            <div class="custom-control custom-switch pt-2">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Promotion de la salle</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input"  id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Vente boissons</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2"> Gestion planning équipe</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-2 p-2">
+
+                            <div class="custom-control custom-switch pt-2">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Outil e-mailing</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input"  id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Gestion paie</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">Gestion congès</label>
+                            </div>
+                        </div>
+
+             
+                    </div>
+                    
+                </div>
+
+            </section>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
