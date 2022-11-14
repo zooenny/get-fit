@@ -8,62 +8,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
     <script src="https://kit.fontawesome.com/e95fdf927c.js" crossorigin="anonymous"></script>
-
-
     <title>Page formulaire</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="file:///Users/admin/Desktop/get-fit/client-listing.html">Admin Get Fit</a>
 
-                    <div class="collapse navbar-collapse" id="navbarNavDropDown">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="file:///Users/admin/Desktop/get-fit/client-listing.html">Liste
-                                    partenaires</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/Users/admin/Desktop/get-fit/page-formulaire.html">Ajouter un partenaire</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#Modal">
-                        Mon compte
-                      </button>
-                      <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="ModalLabel">Bonjour, Admin Get Fit</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              Cliquez pour vous deconnecter.
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                              <button type="button" class="btn btn-danger">Deconnexion</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </nav>
-            </div>
-        </div>
+<?php 
+ require 'header.php'
+?>
 
-        <div class="pt-3">
-            <a class="btn btn-secondary" href="/Users/admin/Desktop/get-fit/client-listing.html" role="button">
-                Retour liste partenaires
-            </a>
+<div class="container pt-3">
+        <div class="row"> 
+                <a class="ml-15 btn btn-secondary" href="/get-fit/template/client-listing.php"
+                    role="button">
+                    Retour liste partenaires
+                </a>
         </div>
     </div>
 
@@ -156,7 +116,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+            <script src="/get-fit/script/script.js"></script>
 
 </body>
 </html>
