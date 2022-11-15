@@ -22,8 +22,6 @@
 
 <?php 
     require 'header.php';
-    require_once 'constants/text_constants.php';
-   
 ?>
 
 <section>
@@ -52,16 +50,21 @@
 <section>
             <div class="container client-locations pt-2">
                 <div class="row">
-                <?php foreach ($mysqlConnection->query('SELECT * FROM clients', PDO::FETCH_ASSOC) as $clients) { ?>
+                <?php foreach ($mysqlConnection->query('SELECT * FROM clients', PDO::FETCH_ASSOC) as $clients)
+                 { ?>
                     <div class="col-md-4 col-xs-2 p-2">
                         <div class="card">
                             <img src="/get-fit/assets/get-fit-bordeaux.png"
                                 class="card-img-top rounded-lg" alt="">
                             <div class="card-body">
                                 <h5 class="client-name fw-700">                               
-                                     <a href="/get-fit/template/client-single.php" style="color:black"> <?php echo $clients['client_name']; ?> </a>
+                                     <a href="/get-fit/template/client-single.php" style="color:black"> 
+                                     <?php echo $clients['client_name']; ?> 
+                                    </a>
                                 </h5> 
-                                <p class="client-location-nb"> <?php echo $clients['client_nb_of_locations']." "."enseignes"; ?> </p>                   
+                                <p class="client-location-nb"> 
+                                    <?php echo $clients['client_nb_of_locations']." "."enseignes"; ?>
+                                 </p>                   
                                 <div class="custom-control custom-switch">
                                     <input type="checkbox" class="custom-control-input" id="customSwitch1">
                                     <label class="custom-control-label" for="customSwitch1" id="activate-client1">Non actif</label>
